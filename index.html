@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到 ZK 的空间</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>ZK</span>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="active">首页</a>
+                <a href="#about">关于</a>
+                <a href="#projects">项目</a>
+                <a href="#contact">联系</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">你好，我是 <span class="highlight">ZK</span></h1>
+                    <p class="hero-subtitle">欢迎来到我的个人空间</p>
+                    <p class="hero-description">
+                        这是一个使用 Cloudflare Pages 部署的静态网站。<br>
+                        简单、快速、完全免费！
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">
+                            <i class="fas fa-user"></i> 了解更多
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i class="fas fa-project-diagram"></i> 查看项目
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="window-title">welcome.js</span>
+                        </div>
+                        <div class="window-content">
+                            <pre><code>console.log("🚀 欢迎访问 ZK 的网站!");
+console.log("📅 部署时间: " + new Date().toLocaleDateString());
+console.log("⚡ 由 Cloudflare Pages 提供支持");
+console.log("💻 技术栈: HTML5, CSS3, JavaScript");</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <h2 class="section-title">关于我</h2>
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>技术爱好者</h3>
+                        <p>对 Web 开发、云计算和新技术充满热情</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>云原生实践者</h3>
+                        <p>喜欢探索 Serverless、边缘计算等云技术</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>效率追求者</h3>
+                        <p>致力于用技术提升工作和生活效率</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2 class="section-title">项目展示</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fab fa-js-square"></i>
+                            <h3>JavaScript 工具库</h3>
+                        </div>
+                        <p>一套实用的 JavaScript 工具函数集合</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-palette"></i>
+                            <h3>UI 组件库</h3>
+                        </div>
+                        <p>现代化的 React UI 组件库</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-server"></i>
+                            <h3>API 服务</h3>
+                        </div>
+                        <p>基于云函数的 API 服务架构</p>
+                        <div class="project-tags">
+                            <span class="tag">Cloudflare</span>
+                            <span class="tag">Serverless</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h2 class="section-title">保持联系</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@zk.dev</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/zk</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-twitter"></i>
+                            <span>@zk_dev</span>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="messageForm">
+                            <input type="text" placeholder="你的名字" required>
+                            <input type="email" placeholder="邮箱地址" required>
+                            <textarea placeholder="留言内容..." rows="4" required></textarea>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> 发送消息
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    <span>ZK</span>
+                </div>
+                <p class="footer-text">
+                    © 2026 ZK. 由 Cloudflare Pages 提供技术支持
+                </p>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

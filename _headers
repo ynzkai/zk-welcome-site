@@ -1,0 +1,4 @@
+# Static site - no build needed 
+/* 
+  X-Static-Site: true 
+  Cache-Control: public, max-age=3600 

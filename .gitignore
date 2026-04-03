@@ -1,0 +1,6 @@
+# Exclude everything except static files 
+node_modules/ 
+.git/ 
+*.log 
+package.json 
+package-lock.json 
